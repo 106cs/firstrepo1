@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    background-color:lightblue;
+    width:300px;
+    border:5px solid black;
+    padding:30px;
+    margin:10px;
+}
+</style>
+    <title>Login Page</title>
+</head>
+<body>
+<center>
+<div>
+<marquee><u> <h1>Login Page</h1></u></marquee>
+<img src="C:\Users\PC 10\Pictures\power.jpg" width="200" height="150">
+</img>
+    <form name="f1" id="form1">
+        <h2>Username</h2> <input type="text" id="username" name="t1" required placeholder="enter your name or id"><br><br>
+        <h2>Password</h2> <input type="password" id="password" name="t2" required placeholder="enter the password"><br><br>
+        <input type="submit" value="Login"><html></div>
+    </form>
+</center>
+<script>
+    document.getElementById("form1").addEventListener("submit", validateForm);
+
+    function validateForm(event) {
+        event.preventDefault();
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "123" && password === "drr") {
+            alert("Login successful!");
+       } else if (username === "456" && password === "pav") {
+            alert("Login successful!");
+        } else {
+            alert("Invalid username or password");
+        }
+    }
+</script>
+</body>
+</html>
